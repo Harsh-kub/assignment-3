@@ -10,3 +10,14 @@ def fact(n):
 
 r=fact(n)
 print("The factorial of", n ,"is:", r)
+
+#TASK 2
+
+import math
+n=float(input("Enter a number: "))
+s=math.sqrt(n)
+l=math.log(n)
+si=math.sin(n)
+print("square root:",s)
+print("logarithm:",l)
+print("sin:",si)
