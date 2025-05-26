@@ -16,5 +16,19 @@ except FileNotFoundError:
 
 # task 2
 
+n=input("enter the text to write to the file :")
+file1=open("output.txt","w")
+file1.write(n)
+file1.close()
+
+m=input("Enter the additional text to Append: ")
+file2=open("output.txt","a")
+file2.write(m)
+file2.close()
+
+print("The final output of file output.txt is")
+print(n)
+print(m)
+
 
 
