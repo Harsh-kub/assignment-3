@@ -1,23 +1,19 @@
-# ASSIGNMENT 3
+# ASSIGNMENT 4
 # TASK 1
 
-n=int(input("Enter a number: "))
-def fact(n):
-    if n<2:
-        return 1
-    else:
-        return n*fact(n-1)
+print("READING  FILE CONTENT")
+file1=open("sample.txt","r")
+file_r=file1.read()
+print(file_r)
+file1.close()
 
-r=fact(n)
-print("The factorial of", n ,"is:", r)
+try:
+    file1 = open("sample.tx", "r")
+    file_r = file1.read()
+    file1.close()
+except FileNotFoundError:
+    print("the file 'sample.txt' does not exist")
 
 #TASK 2
 
-import math
-n=float(input("Enter a number: "))
-s=math.sqrt(n)
-l=math.log(n)
-si=math.sin(n)
-print("square root:",s)
-print("logarithm:",l)
-print("sin:",si)
+
