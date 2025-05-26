@@ -8,7 +8,7 @@ print(file_r)
 file1.close()
 
 try:
-    file1 = open("sample.tx", "r")
+    file1 = open("sample.txt", "r")
     file_r = file1.read()
     file1.close()
 except FileNotFoundError:
